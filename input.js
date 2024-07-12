@@ -2,22 +2,40 @@ let connection;
 
 // callback to take in and interpret user input into actions
 const handleUserInput = (key) => {
+  // escape case  
   if (key === "\u0003") {
     process.exit();
   };
-  if (key === "\u0077") {
+  // movement keys
+  if (key === "w") {
     connection.write("Move: up");
   };
-  if (key === "\u0073") {
+  if (key === "s") {
     connection.write("Move: down");
   };
-  if (key === "\u0061") {
+  if (key === "a") {
     connection.write("Move: left");
   };
-  if (key === "\u0064") {
+  if (key === "d") {
     connection.write("Move: right");
   };
-}
+  // canned messages
+  if (key === "l") {
+    connection.write("Say: looooool");
+  };
+  if (key === "k") {
+    connection.write("Say: keep it up");
+  };
+  if (key === "j") {
+    connection.write("Say: just warming up");
+  };
+  if (key === "h") {
+    connection.write("Say: hey");
+  };
+  if (key === "g") {
+    connection.write("Say: gotcha");
+  };
+};
 
 // allow our client to accept inputs from user
 const setupInput = (conn) => {
