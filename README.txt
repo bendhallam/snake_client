@@ -4,12 +4,12 @@ Snake game is a very popular video game. It is a video game concept where the pl
 
 This is simply a multiplayer take on the genre.
 
-Before you can run this client, you need to first make sure the server - which is also contained in this repository - is running.
-
+Before you can run this client, you need to first make sure the server - which can be found  at https://github.com/bendhallam/snake_server - is running.
+Note: this is a forked repo of the snake_client originally found at https://github.com/lighthouse-labs/snek-multiplayer, now containing updated code that sends a message to all active clients whenever a new client connects
 
 ## Final Product
 
-!["screenshot description"](#)
+!["Shows two active terminals running, one running the server and the other running the client"](#)
 !["screenshot description"](#)
 
 
