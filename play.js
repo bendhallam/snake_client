@@ -1,7 +1,6 @@
 const { connect } = require("./client");
-const { setupInput } = require("./input")
+const { input } = require("./input");
 
+console.log("Connecting...");
 
-console.log("Connection...");
-
-setupInput(connect()); // feeds the data returned by the connect function into the setupInput function
+input.setup(connect()); // feeds the socket object returned by the connect function into the setupInput function
